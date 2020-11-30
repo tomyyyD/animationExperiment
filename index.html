@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Time!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li class="nav-item heading">
+                <a onCLick="scrollFunction(0)">
+                    <span>Thomas</span>
+                    <img src="./assets/g-block.png" alt="arrow" class="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a onClick="scrollFunction(document.querySelector('.titleContainer').scrollHeight)">
+                    <img src="./assets/g-running.png">
+                    <span>Running</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a onClick="scrollFunction(document.querySelector('.titleContainer').scrollHeight + document.querySelector('.running').scrollHeight)">
+                    <img src="./assets/g-coding.png">
+                    <span>Coding</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <img src="./assets/g-school.png">
+                    <span>School</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <img src="./assets/g-about.png">
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <img src="./assets/g-theme.png">
+                    <span>Theme</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="titleContainer">
+            <div class="titleTextContainer">
+                <div class="name">
+                    <div style="display: flex;flex-direction: row;">
+                        <h1 class="title">T</h1>
+                        <h1 class="title">H</h1>
+                        <h1 class="title">O</h1>
+                        <h1 class="title">M</h1>
+                        <h1 class="title">A</h1>
+                        <h1 class="title">S</h1>
+                    </div>
+                    <div style="display: flex;flex-direction: row;">
+                        <h1 class="title">D</h1>
+                        <h1 class="title">A</h1>
+                        <h1 class="title">M</h1>
+                        <h1 class="title">I</h1>
+                        <h1 class="title">A</h1>
+                        <h1 class="title">N</h1>
+                        <h1 class="title">I</h1>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img id="titleImage" src="./assets/g-block.png">
+                </div>
+            </div>
+            <div class="titleSubtextContainer">
+                <div style="width: 20%; margin-right: 40px; margin-top: 15px; flex: 1;">
+                    <h3>What I love to do! -></h2>
+                </div>
+                <div style="flex: 3;">
+                    <div class="fade">
+                        <h2 class='titleSubtext'>Building fun robotics projects with Python, Arduino, Raspberry Pi, etc.</h2>
+                    </div>
+                    <div class="fade">
+                        <h2 class='titleSubtext'>Programming stylish websites, like this one, and many others that will be linked below.</h2>
+                    </div>
+                    <div class="fade">
+                        <h2 class='titleSubtext'>Creating fun, and somethimes completely random, desktop applications.</h2>
+                    </div>
+                    <div class="fade">
+                        <h2 class='titleSubtext'>Running, running, and more running!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="running">
+            <div class="subtextContainer runningText">
+                <div>
+                    <h1 class="titleSubtext">My Running Life</h2>
+                </div>
+            </div>
+            <div class="subtextContainer runningText">
+                <div class="content">
+                    <div class="content">
+                        <h2>2x PA state qualifier</h2>
+                        <h2>PA district 1 medalist in 18th place</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="subtextContainer runningText">
+                <div>
+                    <h2>Awards</h2>
+                    <div class="content">
+                        <h4>2x all-area 1st team</h3>
+                    </div>
+                </div>    
+                <div>
+                    <h2>Personal Bests</h2>
+                    <div class="content">
+                        <h4>5000m: 16:02</h4>
+                        <h4>3200m: 9:59</h4>
+                        <h4>1 mile: 4:33</h4>
+                        <h4>1600m: 4:29</h4>
+                    </div>
+                </div>
+                <div>
+                    <h2>Row 3</h2>
+                    <div class="content">
+                        <h4>text</h4>
+                        <h4>text</h4>
+                        <h4>text</h4>
+                        <h4>text</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coding">
+            <div class="subtextContainer codingText">
+                <h1 class="titleSubtext">Coding Life</h1>
+            </div>
+        </section>
+    </main>
+    <div class='intro'>
+        
+    </div>
+    <div class="cursor"></div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
