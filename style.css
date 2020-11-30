@@ -205,6 +205,12 @@ h4{
 
 .runningText{
     transform: translateX(103%);
+    display: flex;
+}
+
+.horizontalTextContainer{
+    flex: 1; 
+    text-align: center;
 }
 
 .codingText{
