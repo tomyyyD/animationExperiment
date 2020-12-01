@@ -97,7 +97,7 @@ html{
 }
 
 .navbar:hover .logo{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 
 main{
@@ -126,7 +126,10 @@ h3{
 h4{
     font-size: 2rem;
 }
-
+p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 .fade{
     opacity: 1;
 }
@@ -172,8 +175,12 @@ h4{
     transform: scaleY(1.4);
 }
 
+.bodyContainer{
+    transition-duration: 2s;
+    background-color: #cea3a2;
+}
+
 .running{
-    background: radial-gradient(#b695a1, #cea3a2);
     overflow: hidden;
     color: #3a3a3a;
 }
@@ -191,7 +198,8 @@ h4{
 .coding{
     overflow: hidden;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    color: #3a3a3a
 }
 
 .subtextContainer{
@@ -214,10 +222,10 @@ h4{
 }
 
 .codingText{
-    width: 100vw;
     display: flex;
     flex-direction: row-reverse;
     transform: translateX(-103%);
+    text-align: right;
 }
 
 #titleImage{
@@ -236,7 +244,7 @@ h4{
     pointer-events: none;
     animation: cursorAnim 600ms infinite alternate;
     transform: translate3d(-50%, -50%, 0);
-    transition: 200ms ease-out;
+    transition: 100ms ease-out;
     z-index: 1;
 }
 

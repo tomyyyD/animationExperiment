@@ -1,10 +1,6 @@
 const cursor = document.querySelector('.cursor');
 const titleContainer = document.querySelector('.titleContainer')
-const running = document.querySelector('.running')
-const runningContainer = document.querySelector('.runningContainer')
-const coding = document.querySelector('.coding')
-const codingContainer = document.querySelector('.codingContainer')
-const titleImage = document.querySelector('#titleImage')
+const bodyContainer = document.querySelector('.bodyContainer')
 
 // document.addEventListener('mousemove', e => {
 //     cursor.setAttribute('style', `top: ${e.pageY - (cursor.scrollHeight/2)}px; left: ${e.pageX - (cursor.scrollWidth/2)}px`);
@@ -41,7 +37,7 @@ $(window).on('load', function() {
             }
         })
         $('.subtextContainer').each(function(i, obj){
-            var objectTop = $(this).offset().top
+            var objectTop = $(this).offset().top;
             //console.log(objectTop)
             //console.log(origin)
             if (objectTop < bottom){
@@ -50,6 +46,14 @@ $(window).on('load', function() {
             }
             else{
                 obj.setAttribute('style', 'transform: null')
+            }
+        })
+        $('.coding').each(function(i, obj){
+            var objectTop = $(this).offset().top;
+            if (objectTop < bottom){
+                bodyContainer.setAttribute('style', 'background-color: #80ffdd')
+            }else{
+                bodyContainer.setAttribute('style', 'background-color: #cea3a2')
             }
         })
     }).scroll();
