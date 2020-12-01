@@ -2,10 +2,6 @@ const cursor = document.querySelector('.cursor');
 const titleContainer = document.querySelector('.titleContainer')
 const bodyContainer = document.querySelector('.bodyContainer')
 
-// document.addEventListener('mousemove', e => {
-//     cursor.setAttribute('style', `top: ${e.pageY - (cursor.scrollHeight/2)}px; left: ${e.pageX - (cursor.scrollWidth/2)}px`);
-// })
-
 $(window).on('load', function() {
     $(window).on('mousemove', function(e){
         //console.log(e.pageX)
@@ -51,7 +47,7 @@ $(window).on('load', function() {
         $('.coding').each(function(i, obj){
             var objectTop = $(this).offset().top;
             if (objectTop < bottom){
-                bodyContainer.setAttribute('style', 'background-color: #80ffdd')
+                bodyContainer.setAttribute('style', 'background-color: rgb(100, 162, 163)')
             }else{
                 bodyContainer.setAttribute('style', 'background-color: #cea3a2')
             }

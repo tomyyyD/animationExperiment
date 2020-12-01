@@ -125,6 +125,11 @@ h3{
 }
 h4{
     font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h4 a{
+    font-size: 2rem;
+    color: #3a3a3a;
 }
 p{
     font-size: 1.5rem;
@@ -177,12 +182,13 @@ p{
 
 .bodyContainer{
     transition-duration: 2s;
-    background-color: #cea3a2;
+    /* background-color: #cea3a2; */
 }
 
 .running{
     overflow: hidden;
     color: #3a3a3a;
+    margin-bottom: 50vh;
 }
 
 .runningContainer{
