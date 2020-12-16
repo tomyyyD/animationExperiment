@@ -47,9 +47,9 @@ $(window).on('load', function() {
         $('.coding').each(function(i, obj){
             var objectTop = $(this).offset().top;
             if (objectTop < bottom-400){
-                bodyContainer.setAttribute('style', 'background-color: rgb(100, 162, 163)')
+                bodyContainer.setAttribute('style', 'background-color: #64a2a3')
             }else{
-                bodyContainer.setAttribute('style', 'background-color: #cea3a2')
+                bodyContainer.setAttribute('style', 'background-color: #82d0d1')
             }
         })
     }).scroll();
