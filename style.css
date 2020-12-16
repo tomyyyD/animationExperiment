@@ -188,7 +188,7 @@ p{
 .running{
     overflow: hidden;
     color: #3a3a3a;
-    margin-bottom: 50vh;
+    padding-bottom: 35vh;
 }
 
 .runningContainer{
@@ -205,7 +205,7 @@ p{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    color: #3a3a3a
+    color: #3a3a3a;
 }
 
 .subtextContainer{
@@ -220,6 +220,7 @@ p{
 .runningText{
     transform: translateX(103%);
     display: flex;
+    padding-bottom: 2vh;
 }
 
 .horizontalTextContainer{
